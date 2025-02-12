@@ -13,9 +13,3 @@ pip install PyQt5,
 pip3 install PyQtWebEngine
 or
 pip install PyQtWebEngine
-
-and
-
-pip3 install selenium
-or
-pip install selenium
