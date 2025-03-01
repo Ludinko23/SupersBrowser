@@ -7,9 +7,6 @@ PyQtWebEngine
 
 to install:
 pip3 install PyQt5
-or
-pip install PyQt5,
 
 pip3 install PyQtWebEngine
-or
-pip install PyQtWebEngine
+
