@@ -34,7 +34,7 @@ class BrowserTab:
 class BrowserApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Tkinter Webbrowser mit Tabs")
+        self.root.title("Tkinter Webbrowser with Tabs")
         self.root.geometry("1000x700")
 
         self.notebook = ttk.Notebook(root)
@@ -45,7 +45,7 @@ class BrowserApp:
         # Menüleiste für neue Tabs
         menubar = tk.Menu(root)
         tab_menu = tk.Menu(menubar, tearoff=0)
-        tab_menu.add_command(label="Neuer Tab", command=self.new_tab)
+        tab_menu.add_command(label="New Tab", command=self.new_tab)
         menubar.add_cascade(label="Tabs", menu=tab_menu)
         root.config(menu=menubar)
 
