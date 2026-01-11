@@ -81,9 +81,6 @@ class Browser(QMainWindow):
 
         self.add_tab_button = create_button("+", self.add_new_tab)
 
-        # Check if today is a weekend and open the URL
-        self.check_if_weekend()
-
         # Apply the initial theme (dark or light)
         self.apply_theme()
 
@@ -245,15 +242,9 @@ class Browser(QMainWindow):
             url = "https://" + url  # Add the protocol if not present
         self.get_current_browser().setUrl(QUrl(url))
 
-    def check_if_weekend(self):
-        today = QDate.currentDate()
-        if today.dayOfWeek() in [6, 7]:  # Saturday or Sunday
-            self.new_tab(QUrl(WEEKEND_URL))  # Open the weekend URL
-
 # Main application
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Browser()
     window.show()
     sys.exit(app.exec_())
-    
